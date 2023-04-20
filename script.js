@@ -1,11 +1,13 @@
 let botao = document.getElementById("botao")
 let container = document.getElementById("conteiner")
 let cabeça = document.getElementById("cabeça")
+let tweetescrito = document.getElementById("tweetescrito")
+let containertweet = document.getElementById("containertweet")
+let likes = document.getElementById("likes")
+let alike = []
 
 botao.addEventListener("click" , function(){
-    let tweetescrito = document.getElementById("tweetescrito")
-    let containertweet = document.getElementById("containertweet")
-
+   
     if (tweetescrito.value.length == 0) {
         window.alert("escreva primeiro")
     } else {
@@ -18,7 +20,7 @@ botao.addEventListener("click" , function(){
 
             filhott.innerHTML = tweetescrito.value
 
-   
+            filhott.append(likes)
     }
 
 })
@@ -38,4 +40,11 @@ tema.addEventListener("click", function () {
         cabeça.style.backgroundColor="#03045E"
     }
    
+})
+
+containertweet.addEventListener("click", function(){
+    for (let c in alike) {
+        alike.push[1]
+    likes.innerHTML = "likes" + alike[c]
+    }
 })
